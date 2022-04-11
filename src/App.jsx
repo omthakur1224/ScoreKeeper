@@ -15,7 +15,7 @@ function App() {
     }
   }
   const handleBall =(value)=>{
-    if( cric.score<101 && cric.ball>0 && cric.ball<300){
+    if( cric.score<101  && cric.wicket<10 && cric.ball>0 && cric.ball<300){
       cric.ball+=value;
       setCric({...cric});
     }
