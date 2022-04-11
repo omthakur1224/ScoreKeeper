@@ -85,7 +85,7 @@ function App() {
         {/* Increase the total number of balls thrown here. */}
         <button onClick={()=>handleBall(1)}>Add 1</button>
       </div>
-            {(cric.score>=101)?"India Won":""}
+<h1>{(cric.score>=101)?"India Won":""}</h1>
       {/* If score reaches greater than 100, show text "India Won" without quotes in h1 tag with class name 'status' */}
     </div>
   );
