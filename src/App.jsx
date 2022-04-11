@@ -21,7 +21,7 @@ function App() {
     }
   }
   const handleWicket =(value)=>{
-    if( cric.score<101 && cric.wicket>0 && cric.wicket<11){
+    if( cric.score<101 && cric.wicket>0 && cric.wicket<10){
       cric.wicket+=value;
       setCric({...cric});
     }
