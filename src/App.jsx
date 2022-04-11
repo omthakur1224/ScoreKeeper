@@ -9,7 +9,7 @@ function App() {
     ball: 50,
   })
   const handleShot =(value)=>{
-    if(cric.score>0 && cric.score<101){
+    if(cric.score>0 && cric.score<101 && cric.wicket<10 && cric.ball<301){
       cric.score+=value;
       setCric({...cric});
     }
