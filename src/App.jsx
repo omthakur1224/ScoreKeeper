@@ -66,22 +66,33 @@ function App() {
         </div>
       </div>
 
-      <div className="addScore">
-        Add Score
+      <div className="addScore" style={{
+        display:"flex",
+        justifyContent:"space-around",
+      }}>
+        <span>Add Score</span> 
         {/* these buttons should add the respective amount in the score */}
         <button className="addScore1" onClick={()=>handleShot(1)} >Add 1</button>
         <button className="addScore4" onClick={()=>handleShot(4)}>Add 4</button>
         <button className="addScore6" onClick={()=>handleShot(6)}>Add 6</button>
       </div>
 
-      <div className="addWicket">
-        Add Wicket
+      <div className="addWicket" style={{
+        display:"flex",
+        justifyContent:"center",
+        gap:"30px",
+      }}>
+         <span>Add Wicket </span> 
         {/* Increase the count of wicket */}
         <button onClick={()=>handleWicket(1)}>Add 1 wicket</button>
       </div>
 
-      <div className="addBall">
-        Add ball
+      <div className="addBall" style={{
+        display:"flex",
+        justifyContent:"center",
+        gap:"30px",
+      }}>
+        <span>Add ball</span> 
         {/* Increase the total number of balls thrown here. */}
         <button onClick={()=>handleBall(1)}>Add 1</button>
       </div>
